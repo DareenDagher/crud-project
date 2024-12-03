@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container w-75 m-auto py-4">
+        <h2 class="text-center p-3 fw-bloder">Product Management System</h2>
+
+        <!-- Product Name Input -->
+        <div class="mb-3">
+            <label for="productNameInput" class="form-label">Product Name:</label>
+            <input id="productNameInput" type="text" class="form-control" />
+            <!-- Error message container -->
+            <span id="productNameError" class="text-danger mb-2 d-block"></span>
+        </div>
+
+        <!-- Product Price Input -->
+        <div class="mb-3">
+            <label for="productPriceInput" class="form-label">Product Price:</label>
+            <input id="productPriceInput" type="number" class="form-control" />
+        </div>
+
+        <!-- Product Category Input -->
+        <div class="mb-3">
+            <label for="productCategoryInput" class="form-label">Product Category:</label>
+            <input id="productCategoryInput" type="text" class="form-control" />
+        </div>
+
+        <!-- Product Description Input -->
+
+        <div class="mb-3">
+            <label for="productDescriptionInput" class="form-label">Product Description:</label>
+            <textarea id="productDescriptionInput" type="text" class="form-control"></textarea>
+        </div>
+
+        <!-- Add Product Button -->
+        <button class="btn addBtn btn-outline-primary w-100">Add Product</button>
+
+    </div>
+
+    <!-- Search Bar -->
+    <div class="container w-75 m-auto py-4">
+        <div class="mb-3">
+            <label for="search" class="form-label">Search:</label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-search"></i></span>
+                <input id="search" type="text" placeholder="Search by name" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Product Table -->
+    <div class="container w-75 m-auto py-4">
+        <table class="table  table-bordered text-center">
+            <thead class="table-light">
+                <th>Index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody>
+
+                <!-- Rows will be dynamically added here -->
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
